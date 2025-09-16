@@ -16,6 +16,7 @@ class BookApp extends StatelessWidget {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
         theme: ThemeData(
+          brightness: Brightness.dark,
           scaffoldBackgroundColor: kPrimaryColor
         ),
         title: "Book App",
