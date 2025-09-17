@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sizer/sizer.dart';
 
 class CustomBookItem extends StatelessWidget {
@@ -9,7 +10,7 @@ class CustomBookItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.only(right: 3.w),
+      padding: EdgeInsets.only(right: 3.w),
       child: AspectRatio(
         aspectRatio: 0.7,
         child: DecoratedBox(
