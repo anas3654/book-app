@@ -18,7 +18,7 @@ class BestSellerItem extends StatelessWidget {
               aspectRatio: 7 / 10,
               child: DecoratedBox(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(0.05.dp),
+                  // borderRadius: BorderRadius.circular(0.05),
                   image: DecorationImage(
                     image: AssetImage("assets/images/book_cover.png"),
                   ),
