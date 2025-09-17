@@ -32,10 +32,10 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  get:
   sizer:
   font_awesome_flutter:
-  google_fonts: 
+  google_fonts:
+  go_router:
 
 dev_dependencies:
   flutter_test:
