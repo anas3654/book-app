@@ -1,4 +1,4 @@
-import 'package:bookly_app/features/home/presentation/view/widgets/best_seller_item.dart';
+import 'package:bookly_app/features/home/presentation/view/widgets/book_info_item.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
@@ -15,7 +15,7 @@ class BestSellerSliverList extends StatelessWidget {
       (context, index) {
         return Padding(
           padding: EdgeInsets.only(left: 4.w),
-          child: BestSellerItem(),
+          child: BookInfoItem(),
         );
       },
     ));

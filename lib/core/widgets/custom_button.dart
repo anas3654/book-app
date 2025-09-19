@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
-import '../utils/styles.dart';
-
 class CustomButton extends StatelessWidget {
   const CustomButton(
       {this.topLeft = 0,

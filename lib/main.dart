@@ -21,6 +21,11 @@ class BookApp extends StatelessWidget {
           scaffoldBackgroundColor: kPrimaryColor,
           textTheme:
               GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme),
+          textSelectionTheme: TextSelectionThemeData(
+            cursorColor: Colors.white,
+            selectionColor: Colors.white.withValues(alpha: 0.3),
+            selectionHandleColor: Colors.white,
+          ),
         ),
         title: "Book App",
         debugShowCheckedModeBanner: false,

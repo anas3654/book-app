@@ -5,8 +5,8 @@ import 'package:bookly_app/constants.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sizer/sizer.dart';
 
-class BestSellerItem extends StatelessWidget {
-  const BestSellerItem({super.key});
+class BookInfoItem extends StatelessWidget {
+  const BookInfoItem({super.key});
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -21,7 +21,6 @@ class BestSellerItem extends StatelessWidget {
                 aspectRatio: 7 / 10,
                 child: DecoratedBox(
                   decoration: BoxDecoration(
-                    // borderRadius: BorderRadius.circular(0.05),
                     image: DecorationImage(
                       image: AssetImage("assets/images/book_cover.png"),
                     ),

@@ -1,7 +1,6 @@
 import 'package:bookly_app/features/home/presentation/view/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:sizer/sizer.dart';
 
 class BookListView extends StatelessWidget {
   const BookListView({required this.height,super.key});
