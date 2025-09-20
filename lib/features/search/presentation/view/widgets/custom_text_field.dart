@@ -1,5 +1,6 @@
 import 'package:bookly_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({super.key});
@@ -7,9 +8,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      onSubmitted: (value) {
-
-      },
+      onSubmitted: (value) {},
       cursorColor: Colors.white,
       maxLines: 1,
       decoration: InputDecoration(
@@ -19,12 +18,18 @@ class CustomTextField extends StatelessWidget {
           enabledBorder: buildOutlineInputBorder(),
           focusedBorder: buildOutlineInputBorder(),
           border: buildOutlineInputBorder(),
-          suffixIcon: Icon(Icons.search)
-      ),
+          prefixIconColor: Colors.white,
+          prefixIcon: IconButton(
+              onPressed: () => Navigator.pop(context),
+              icon: Icon(FontAwesomeIcons.xmark)),
+          suffixIconColor: Colors.white
+          ,
+          suffixIcon: Icon(Icons.search)),
     );
   }
 }
-OutlineInputBorder buildOutlineInputBorder(){
+
+OutlineInputBorder buildOutlineInputBorder() {
   return OutlineInputBorder(
     borderSide: BorderSide(color: Colors.white),
     borderRadius: BorderRadius.circular(16),
