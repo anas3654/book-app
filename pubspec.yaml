@@ -41,6 +41,8 @@ dependencies:
   flutter_bloc:
   bloc:
   get_it:
+  cached_network_image:
+  shimmer:
 
 dev_dependencies:
   flutter_test:
