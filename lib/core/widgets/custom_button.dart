@@ -8,8 +8,7 @@ class CustomButton extends StatelessWidget {
         this.bottomLeft = 0,
         this.bottomRight = 0,
         required this.color,
-        required this.text,
-        required this.textStyle,
+        required this.widget,
         required this.onPressed,
         super.key});
 
@@ -18,8 +17,7 @@ class CustomButton extends StatelessWidget {
   final double bottomLeft;
   final double bottomRight;
   final Color color;
-  final String text;
-  final TextStyle textStyle;
+  final Widget widget;
   final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
@@ -38,10 +36,7 @@ class CustomButton extends StatelessWidget {
           ),
           backgroundColor: color,
         ),
-        child: Text(
-          text,
-          style: textStyle,
-        ),
+        child: widget
       ),
     );
   }

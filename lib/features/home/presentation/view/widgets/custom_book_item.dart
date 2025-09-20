@@ -9,10 +9,10 @@ class CustomBookItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(12),
-      child: Padding(
-        padding: EdgeInsets.only(right: 3.w),
+    return Padding(
+      padding: EdgeInsets.only(right: 3.w),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(12),
         child: AspectRatio(
           aspectRatio: 0.7,
           child: CachedNetworkImage(
